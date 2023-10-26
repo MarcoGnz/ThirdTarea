@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    padding-bottom: 75px;
+    min-height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.section_inner {
+    padding: 50px 10% 30px;
+}
+
+.section_title {
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu_section {
+    background: url("../images/sample_menu_bg.jpg") no-repeat bottom;
+    background-attachment: fixed;
+}
+
+.menu_title {
+    display: inline-block;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #42210b;
+    border-bottom: solid #42210b 1px;
+    margin-bottom: 20px;
+}
+
+.menu_list {
+    display: flex;
+    /* Usar flexbox para alinear elementos horizontalmente */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan a la siguiente fila si no caben */
+    justify-content: space-between;
+    /* Distribuir uniformemente los elementos a lo largo del contenedor */
+    list-style: none;
+    /* Eliminar los marcadores de lista predeterminados */
+    padding: 20px;
+    /* Eliminar relleno interno */
+    background: white;
+    /* Establecer un fondo blanco */
+    padding-bottom: 50px;
+    /* Agregar un margen exterior de 20px */
+}
+
+.recommended_menu_item {
+    width: 49%;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.menu_item_title {
+    font-size: 18px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.coffee_menu {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.caffee_menu_list_item {
+    width: 49%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.caffee_menu_image {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.caffee_menu_content {
+    width: 80%;
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block; /* Hace que el elemento sea un bloque en línea */
+    padding: .8rem 2rem; /* Espaciado interno arriba/abajo y izquierda/derecha */
+    z-index: 10; /* Controla el orden de apilamiento, puede ser útil con elementos superpuestos */
+    text-align: center; /* Centra el texto horizontalmente dentro del botón */
+    border-radius: 10px; /* Aplica bordes redondeados a los botones */
+    background: rgba(127, 136, 182, 1); /* Fondo con color RGBA (rojo, verde, azul, alfa) */
+    color: white; /* Color del texto dentro del botón */
+}

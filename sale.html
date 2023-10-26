@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIC cafe</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sale.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Open+Sans:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="section_inner">
+        <div class="section_title">
+            <h1>Venta de café en grano</h1>
+        </div>
+    </section>
+
+    <section class="section_inner menu_section">
+        <div class="center">
+            <h1 class="menu_title">Gama (de productos)</h1>
+        </div>
+        <ul class="menu_list coffee_menu">
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 200 g</h2>
+                    <p class="caffee_menu_price">500 guaranies</p>
+                </div>
+                <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 500 g</h2>
+                    <p class="caffee_menu_price">900 guaranies</p>
+                </div>
+                <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 200 g</h2>
+                    <p class="caffee_menu_price">700 guaranies</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 500 g</h2>
+                    <p class="caffee_menu_price">1.200 guaranies.</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+        </ul>
+        <h2>Gastos de envío.</h2>
+        <ul>
+            <li>500 guaranies por gastos de envío si el importe total es inferior a 2000 guaranies.</li>
+            <li>250 guaranies por un mínimo de 2.000 guaranies.</li>
+            <li>Gratuito a partir de 3.000 guaranies.</li>
+        </ul>
+    </section>
+
+    <section class="section_inner">
+        <h2>pedir</h2>
+        <form>
+            <p>Por favor seleccione un producto</p>
+            <div>
+                <select id="product" required>
+                    <option hidden value="0">Por favor seleccione</option>
+                    <option value="1">Mezcla original 200g a 500 guaranies</option>
+                    <option value="2">Mezcla original 500g a 900 guaranies</option>
+                    <option value="3">Mezcla especial 200g a 700 guaranies</option>
+                    <option value="4">Mezcla especial 500g, 1.200 guaranies.</option>
+                </select>
+                <p>Por favor seleccione cantidad</p>
+                <input type="number" min="1" max="5" id="number" required>
+            </div>
+            <br>
+            <input type="button" class="btn" value="añadir" onclick="add()">
+            <input type="button" class="btn" value="importe total" onclick="calc()">
+        </form>
+    </section>
+    <script type="text/javascript" src="javascripts/sale.js"></script>
+</body>
+
+</html>
